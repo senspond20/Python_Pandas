@@ -10,7 +10,7 @@ html = df.to_html(
         justify="center")
 # print(html)
 
-f = open('layout.html','r', encoding='utf-8')
+f = open('html/layouts/layout.html','r', encoding='utf-8')
 layout = f.read()
 f.close()
 
@@ -19,7 +19,7 @@ f.close()
 render = layout.replace("{{content}}", html)
 # print(render)
 
-f = open('output.html', 'w',encoding='utf-8')
+f = open('html/pages/output.html', 'w',encoding='utf-8')
 f.write(render)
 f.close()
 # print(fd)
